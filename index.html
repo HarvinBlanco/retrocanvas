@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🎨 RetroCanvas Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <h1>🖼️ RetroCanvas</h1>
+    <p>Genera un fondo de pantalla con lo que estaba de moda el año que naciste.</p>
+
+    <input type="date" id="dob" />
+    <button onclick="generarFondo()">✨ Crear Fondo</button>
+
+    <div id="fondo" class="fondo-container hidden">
+      <h2>🕰️ Tu Fondo Retro</h2>
+
+      <div id="vista-previa" class="preview-box">
+        <p><strong>🎵 Imagen musical:</strong><br><img id="img-song" class="preview-img" /></p>
+        <p><strong>🎬 Imagen de película:</strong><br><img id="img-movie" class="preview-img" /></p>
+        <p><strong>🧢 Imagen de moda:</strong><br><img id="img-fashion" class="preview-img" /></p>
+      </div>
+
+      <canvas id="canvas" width="800" height="600"></canvas><br>
+      <a id="descargar" download="fondo-retro.png">📥 Descargar imagen</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
